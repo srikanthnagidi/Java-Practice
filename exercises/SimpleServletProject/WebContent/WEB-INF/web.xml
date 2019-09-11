@@ -9,14 +9,6 @@
   	<servlet-name>xmlServlet</servlet-name>
   	<url-pattern>/xmlServletPath</url-pattern>
   </servlet-mapping>
-  <servlet>
-	  <servlet-name>SimpleServlet</servlet-name>
-	  <servlet-class>org.eample.firstservlet</servlet-class>
-	  <init-param>
-	  	<param-name>defaultValue</param-name>
-	  	<param-value>John Doe</param-value>
-	  </init-param>
-  </servlet>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     

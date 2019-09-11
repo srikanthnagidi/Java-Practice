@@ -1,14 +1,12 @@
 package com.eample.firstservlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 
 public class XmlServlet extends HttpServlet {
@@ -24,7 +22,7 @@ public class XmlServlet extends HttpServlet {
 		String userName = request.getParameter("userName");
 		String userId = request.getParameter("userId");
 		HttpSession session = request.getSession();
-		if (!userName.isEmpty() && userName != null) {
+		if (userName != "" && userName != null) {
 			session.setAttribute("savedUserName", userName);
 		}
 		
