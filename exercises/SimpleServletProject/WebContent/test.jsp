@@ -14,6 +14,7 @@
 <br>This is inside the body : <%=1+2 %>
 
 <!-- declaration tag  - declare a method.  this method will be available to all script tags-->
+<!-- method declaration must in the following tags-->
 <%!
 public int add(int a, int b){
 	return a+b;	
@@ -23,5 +24,9 @@ public int add(int a, int b){
 k = add(1234, 4394);
 out.println("<br> this is by using a method, the value of k is " + k );
 %>
+<%for (int i=0; i<5; i++){
+%>
+<br> the new value of i is <%=i%>
+<%} %>
 </body>
 </html>
