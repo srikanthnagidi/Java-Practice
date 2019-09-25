@@ -34,4 +34,5 @@
 	<bean id = "circle" class = "org.springdemo.Circle">
 		<property name="centre" ref = "pointA"></property>
 	</bean>
+	
 </beans>
