@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-init-method = "myInit" default-destroy-method = "cleanUp" >
+	<bean id = "parentTriangle" class = "org.springdemo.Triangle" scope = "prototype">
+		<property name="pointA" ref = "pointA"></property>
+	</bean>
+	<bean id="triangle" class = "org.springdemo.Triangle" name = "triangle-name" parent = "parentTriangle" scope="singleton" >
+		<property name = "type" value ="Right angled Triangle" ></property>
+		<property name = "height" value ="20"></property>
+		<property name = "pointB" ref = "pointB"></property>
+		<property name = "pointC" ref = "pointC"></property>
+	</bean>
+	<bean id = "shape" class = "org.springdemo.Triangle" parent= "parentTriangle">
+		<property name = "pointB" ref = "pointB"></property>
+	</bean>
+	<bean id = "pointA" class = "org.springdemo.Point">
+		<property name = "x" value = "${PointA.PointX}"></property>
+		<property name = "y" value = "${PointA.PointY}"></property>
+	</bean> 
+	<bean id = "pointB" class = "org.springdemo.Point">
+		<property name = "x" value = "20"></property>
+		<property name = "y" value = "20"></property>
+	</bean> 
+	<bean id = "pointC" class = "org.springdemo.Point">
+		<property name = "x" value = "0"></property>
+		<property name = "y" value = "20"></property>
+	</bean>
+
+	<bean class = "org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="pointsconfig.properties"></property>
+	</bean>
+	<alias name="triangle" alias="triangle-alias"/>
+	
+	<bean id = "circle" class = "org.springdemo.Circle">
+		<property name="centre" ref = "pointA"></property>
+	</bean>
+</beans>
