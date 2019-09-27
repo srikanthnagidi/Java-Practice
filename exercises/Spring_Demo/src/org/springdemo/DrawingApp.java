@@ -24,5 +24,7 @@ public class DrawingApp {
 		
 		shape = (Shape)context.getBean("shape");
 		shape.draw();
+		
+		System.out.println(context.getMessage("greeting", null, "defalut greeting", null));
 	}
 }

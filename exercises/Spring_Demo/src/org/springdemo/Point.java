@@ -1,5 +1,7 @@
 package org.springdemo;
 
+
+//with Component annotation is used all the beans of the Point instance will have same behavior
 public class Point {
 	private int x;
 	private int y;
