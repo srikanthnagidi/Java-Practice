@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "https://www.springframework.org/dtd/spring-beans-2.0.dtd">
-<beans default-init-method = "myInit" default-destroy-method = "cleanUp" >
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd"
+        default-init-method = "myInit" default-destroy-method = "cleanUp">
+     <context:annotation-config/>
+<!-- <beans default-init-method = "myInit" default-destroy-method = "cleanUp" > -->
 	<bean id = "parentTriangle" class = "org.springdemo.Triangle" scope = "prototype">
 		<property name="pointA" ref = "pointA"></property>
 	</bean>
@@ -22,6 +30,7 @@
 		<property name = "y" value = "20"></property>
 	</bean> 
 	<bean id = "pointC" class = "org.springdemo.Point">
+		<qualifier value = "circleRelated"/>
 		<property name = "x" value = "0"></property>
 		<property name = "y" value = "20"></property>
 	</bean>
@@ -30,9 +39,8 @@
 		<property name="locations" value="pointsconfig.properties"></property>
 	</bean>
 	<alias name="triangle" alias="triangle-alias"/>
-	
 	<bean id = "circle" class = "org.springdemo.Circle">
-		<property name="centre" ref = "pointA"></property>
 	</bean>
-	
+	<bean class = "org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+<!-- 	<bean class = "org.springframework.beans.factory.annotation.Qualifier"/> -->
 </beans>

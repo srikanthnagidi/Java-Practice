@@ -14,12 +14,12 @@ public class DrawingApp {
 		context.registerShutdownHook();
 		//ApplicationContext factory = new FileSystemXmlApplicationContext("spring.xml");
 		//Triangle triangle = (Triangle)factory.getBean("triangle");
-		Shape shape = (Shape)context.getBean("triangle-alias");
-		shape.draw();
+		//Shape shape = (Shape)context.getBean("triangle-alias");
+		//shape.draw();
 		//Triangle tri = (Triangle)context.getBean("triangle2");
 		//tri.draw()
 		
-		shape = (Circle)context.getBean("circle");
+		Shape shape = (Circle)context.getBean("circle");
 		shape.draw();
 		
 		shape = (Shape)context.getBean("shape");
