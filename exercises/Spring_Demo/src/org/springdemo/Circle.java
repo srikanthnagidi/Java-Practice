@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,8 @@ public class Circle implements Shape {
 	
 	private Point centre;
 	
+	@Autowired
+	private MessageSource messageSource;
 	public Point getCentre() {
 		return centre;
 	}
@@ -38,8 +41,9 @@ public class Circle implements Shape {
 	@Override
 	public void draw() {
 		// TODO Auto-generated method stub
-		System.out.println("Drawing Circle :");
-		System.out.println("Circle : Point is " + centre.getX() + " " + centre.getY());
+		System.out.println(this.messageSource.getMessage("drawing.circle", null, "Default-message", null));
+		System.out.println(this.messageSource.getMessage("drawing.point", new Object [] {centre.getX(), centre.getY()}, "Default-message", null));
+		System.out.println(" from the draw method inside the class "+ this.messageSource.getMessage("greeting", null, "Default-Greeting", null));
 	}
 	//by using @PostConstruct the following method will  be called before a circle is initialized
 	//no need to provide default init method in .xml file id @PostConstruct annotation is used
@@ -52,5 +56,13 @@ public class Circle implements Shape {
 	@PreDestroy
 	public void destroyCircle() {
 		System.out.println("Destroy of circle");
+	}
+
+	public MessageSource getMessageSource() {
+		return messageSource;
+	}
+
+	public void setMessageSource(MessageSource messageSource) {
+		this.messageSource = messageSource;
 	}
 }

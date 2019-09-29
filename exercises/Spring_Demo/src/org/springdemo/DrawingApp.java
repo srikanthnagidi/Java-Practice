@@ -25,6 +25,13 @@ public class DrawingApp {
 		shape = (Shape)context.getBean("shape");
 		shape.draw();
 		
-		System.out.println(context.getMessage("greeting", null, "defalut greeting", null));
+		
+		//context.getMessage from the properties files 
+		//it uses key value pairs to print the message pertaining to that key
+		//it has 3 method signatures
+		
+		System.out.println("from the main method" + context.getMessage("greeting", null, "defalut greeting", null));
+		
+		
 	}
 }
