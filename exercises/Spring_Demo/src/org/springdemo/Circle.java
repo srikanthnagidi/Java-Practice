@@ -6,6 +6,8 @@ import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -19,9 +21,11 @@ import org.springframework.stereotype.Service;
 //@Service  even service works instead of component
 //@Repository can be used for data
 //@Controller can be used if controller is defined
-public class Circle implements Shape {
+public class Circle implements Shape, ApplicationEventPublisherAware {
 	
 	private Point centre;
+	
+	private ApplicationEventPublisher publisher;
 	
 	@Autowired
 	private MessageSource messageSource;
@@ -44,6 +48,9 @@ public class Circle implements Shape {
 		System.out.println(this.messageSource.getMessage("drawing.circle", null, "Default-message", null));
 		System.out.println(this.messageSource.getMessage("drawing.point", new Object [] {centre.getX(), centre.getY()}, "Default-message", null));
 		System.out.println(" from the draw method inside the class "+ this.messageSource.getMessage("greeting", null, "Default-Greeting", null));
+		DrawEvent drawEvent = new DrawEvent(this);
+		publisher.publishEvent(drawEvent);
+		System.out.println("");
 	}
 	//by using @PostConstruct the following method will  be called before a circle is initialized
 	//no need to provide default init method in .xml file id @PostConstruct annotation is used
@@ -64,5 +71,11 @@ public class Circle implements Shape {
 
 	public void setMessageSource(MessageSource messageSource) {
 		this.messageSource = messageSource;
+	}
+
+	@Override
+	public void setApplicationEventPublisher(ApplicationEventPublisher publisher) {
+		// TODO Auto-generated method stub
+		this.publisher = publisher;
 	}
 }
