@@ -5,12 +5,12 @@ import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;
 
 //Component is equivalent defining the class bean in xml file
 //<bean id = "circle" class = "org.springdemo.Circle"></bean> this is not required if @Component annotation is used
