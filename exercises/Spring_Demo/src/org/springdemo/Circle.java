@@ -50,7 +50,7 @@ public class Circle implements Shape, ApplicationEventPublisherAware {
 		System.out.println(" from the draw method inside the class "+ this.messageSource.getMessage("greeting", null, "Default-Greeting", null));
 		DrawEvent drawEvent = new DrawEvent(this);
 		publisher.publishEvent(drawEvent);
-		System.out.println("");
+		//System.out.println("");
 	}
 	//by using @PostConstruct the following method will  be called before a circle is initialized
 	//no need to provide default init method in .xml file id @PostConstruct annotation is used
