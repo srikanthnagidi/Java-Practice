@@ -9,6 +9,8 @@ public class Triangle {
 
 	public void setName(String name) {
 		this.name = name;
+		System.out.println("Triangle Setter is called");
+		//throw(new RuntimeException());
 	}
 	
 	

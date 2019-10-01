@@ -2,6 +2,9 @@ package org.SpringAOP.demo.aspect;
 
 //import org.SpringAOP.demo.model.Triangle;
 import org.aspectj.lang.JoinPoint;
+//import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -18,8 +21,9 @@ public class LoggingAspect {
 		System.out.println(joinPoint.getTarget());
 		//Triangle triangle = (Triangle) joinPoint.getTarget();
 	}
-
-	@Before("args(name)")
+	
+	//this annotation will work only if a method is returned. It doesn't work if method throws Exception
+	@AfterReturning("args(name)")
 	public void stringArgumentMethods(String name) {
 		System.out.println("A method that takes String argument is called by object named: " + name);
 	}
@@ -27,6 +31,11 @@ public class LoggingAspect {
 	 * @Before("allGetters()") public void secondAdvice() {
 	 * System.out.println("Second Advice executed"); }
 	 */
+	
+	@AfterThrowing("args(name)")
+	public void exceptionAdvice(String name) {
+		System.out.println("An exception has been thrown");
+	}
 	
 	@Pointcut("execution(* get*())") 
 	public void allGetters() {}

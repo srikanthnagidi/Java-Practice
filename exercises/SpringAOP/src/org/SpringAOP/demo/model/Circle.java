@@ -19,6 +19,7 @@ public class Circle {
 
 	public void setRadius(int radius) {
 		this.radius = radius;
+		System.out.println("Circle Setter is called");
 	}
 	
 	public double getArea() {
