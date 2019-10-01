@@ -15,6 +15,7 @@
 	
 	<bean name = "circle" class = "org.SpringAOP.demo.model.Circle">
 		<property name="name" value = "Circle Name"></property>
+		<property name="radius" value = "20"></property>
 	</bean>
 	
 	<bean name = "shapeService" class = "org.SpringAOP.demo.Service.ShapeService" autowire="byName">
