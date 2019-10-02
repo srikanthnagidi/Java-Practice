@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="524e62a0-3f04-4724-8419-ae58c5e2d26b" name="Default Changelist" comment="">
+    <list default="true" id="b7b26ac7-8ec3-4859-979e-ca655a4c59fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../spring-boot-thymeleaf/src/main/java/com/example/springbootthymeleaf/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-thymeleaf/src/main/java/com/example/springbootthymeleaf/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootunittests/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootunittests/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springbootunittests/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springbootunittests/UserServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/springbootunittests/SpringBootUnitTestsApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/springbootunittests/UserServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserService.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,99 +12,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/spring_boot_unit_tests$UserServiceTest_testGetUser.ic" NAME="UserServiceTest.testGetUser Coverage Results" MODIFIED="1569182471331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.springbootunittests.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_unit_tests$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1569182121672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.springbootunittests.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="209" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding>
-                <element signature="e#127#128#0" expanded="true" />
-                <element signature="e#155#156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springbootunittests/UserServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" lean-forward="true" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springbootunittests/SpringBootUnitTestsApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/springbootunittests/UserServiceTestTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/springbootunittests/UserServiceTest.java" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -131,7 +34,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,58 +59,20 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-boot-unit-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-unit-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootunittests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-unit-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-unit-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-unit-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-unit-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570043632689" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.springbootunittests" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,38 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-unit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springbootunittests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootunittests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootunittests.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testGetUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-boot-unit-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springbootunittests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootunittests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootunittests.UserServiceTest" />
-      <option name="METHOD_NAME" value="testGetUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="SpringBootUnitTestsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-unit-tests" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootunittests.SpringBootUnitTestsApplication" />
@@ -261,12 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.testGetUser" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpringGeneralSettings">
     <option name="allowAutoConfigurationMode" value="true" />
@@ -276,341 +103,64 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="524e62a0-3f04-4724-8419-ae58c5e2d26b" name="Default Changelist" comment="" />
-      <created>1568671655183</created>
+      <changelist id="b7b26ac7-8ec3-4859-979e-ca655a4c59fe" name="Default Changelist" comment="" />
+      <created>1570056801001</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568671655183</updated>
-      <workItem from="1568671656919" duration="2724000" />
-      <workItem from="1569178635899" duration="1223000" />
-      <workItem from="1569179880477" duration="5169000" />
-      <workItem from="1570026528486" duration="1763000" />
-      <workItem from="1570043601000" duration="39000" />
+      <updated>1570056801001</updated>
+      <workItem from="1570056802545" duration="105000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="UserServiceTest - 2019.09.16 at 17h 37m 27s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.09.16 at 17h 41m 29s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.09.16 at 17h 50m 54s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.09.22 at 13h 58m 20s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testGetUser - 2019.09.22 at 14h 09m 34s.xml">
-      <configuration name="UserServiceTest.testGetUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.09.22 at 14h 55m 54s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.09.22 at 15h 00m 30s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_testGetUser - 2019.09.22 at 15h 01m 33s.xml">
-      <configuration name="UserServiceTest.testGetUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.10.02 at 09h 30m 35s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.10.02 at 09h 35m 19s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10918000" />
+    <option name="totallyTimeSpent" value="105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24906667" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22860238" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Maven-2 Build" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Maven-2 Build" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3293092" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949698" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3069307" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Maven-2 Build" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/springbootunittests/UserServiceTestTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/springbootunittests/SpringBootUnitTestsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1373" selection-start-line="1373" selection-end-line="1373" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/context/TestContextManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test-autoconfigure/2.1.8.RELEASE/spring-boot-test-autoconfigure-2.1.8.RELEASE.jar!/org/springframework/boot/test/autoconfigure/SpringBootDependencyInjectionTestExecutionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="948" selection-start-line="948" selection-end-line="948" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#5808#6008#0" expanded="true" />
-            <element signature="e#6007#6008#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/org/springframework/beans/factory/annotation/InjectionMetadata.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/annotation/CommonAnnotationBeanPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springbootunittests/SpringBootUnitTestsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/springbootunittests/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" lean-forward="true" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>spring-boot-unit-tests</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
