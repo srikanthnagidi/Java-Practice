@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Socket Demo</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src = "/webjars/jquery/jquery.min.js"></script>
+    <script src = "/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script>
+        var stompClient = null;
+        function setConnected(connected) {
+            $("#connect").prop("disabled", connected);
+            $("#discconnect").prop("disabled", !connected);
+
+            if (connected){
+                $("#conversation").show();
+            }else{
+                $("#conversation").hide();
+            }
+            #
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
