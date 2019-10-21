@@ -1,4 +1,4 @@
-package com.springboot.graphql.exception;
+    package com.springboot.graphql.exception;
 
 import graphql.ErrorType;
 import graphql.GraphQLError;
