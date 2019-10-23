@@ -23,7 +23,7 @@ public class BreedNotFoundException extends RuntimeException implements GraphQLE
 
     @Override
     public ErrorType getErrorType() {
-        return null;
+        return ErrorType.DataFetchingException;
     }
 
     @Override
