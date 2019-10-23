@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface DogRepository extends CrudRepository<Dog, Long> {
-    @Query("select d.id, d.breed from Dog d")
+/*    @Query("select d.id, d.breed from Dog d")
     List<String> findAllBreed();
 
     @Query("select d.id, d.name from Dog d")
@@ -17,5 +17,5 @@ public interface DogRepository extends CrudRepository<Dog, Long> {
     String findBreedById(Long id);
 
     @Query("update Dog d set d.name=:name where d.id = :id")
-    Dog updateDogName(Long id, String name);
+    Dog updateDogName(Long id, String name);*/
 }

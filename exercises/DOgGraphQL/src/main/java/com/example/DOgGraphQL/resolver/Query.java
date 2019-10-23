@@ -16,12 +16,12 @@ public class Query implements GraphQLQueryResolver {
         this.dogRepository=dogRepository;
     }
     public Iterable<Dog> findAllDogs() {return  dogRepository.findAll();}
-    public Iterable<String> findAllBreed(){
+/*    public Iterable<String> findAllBreed(){
         return dogRepository.findAllBreed();
     }
     public Iterable<String> findAllName(){
         return dogRepository.findAllName();
-    }
+    }*/
 
     public Dog findDogById(Long id) {
         Optional<Dog> optionalDog = dogRepository.findById(id);

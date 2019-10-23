@@ -29,7 +29,7 @@ public class Mutation implements GraphQLMutationResolver {
         return true;
     }
 
-    public Dog upDateDogName(Long id, String name){
+    public Dog updateDogName(String name, Long id){
         Optional<Dog> optionalDog = dogRepository.findById(id);
         if(optionalDog.isPresent()){
             Dog dog = optionalDog.get();

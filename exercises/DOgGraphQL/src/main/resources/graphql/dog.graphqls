@@ -6,13 +6,12 @@ type Dog
     origin:String!
 }
 type Query{
-    getAllDogs : [Dog]!
-    getDogBreeds:[String]!
-    getDogBreedById:String!
-    getDogNames : [String]!
+    findAllDogs : [Dog]!
+    findDogById(id:ID!): Dog!
 }
 type Mutation{
     newDog(name:String!, breed: String!, origin:String!):Dog!
-    deleteDog(id:ID!):Boolean!
-    updateDogName(id:ID!, name:String!):Boolean!
+    deleteDogBreed(breed:String!):Boolean
+    updateDogName(name:String!, id:ID!):Dog!
+
 }
