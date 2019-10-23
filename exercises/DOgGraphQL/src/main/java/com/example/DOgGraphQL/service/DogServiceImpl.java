@@ -39,4 +39,16 @@ public class DogServiceImpl implements DogService {
             throw new DogNotFoundException("not a valid id", id);
         }
     }
+
+    @Override
+    public Dog updateDogNameById(Long id, String name) {
+        Optional<String> optionalName = Optional.ofNullable(dogRepository.findBreedById(id));
+        if (optionalName.isPresent()) {
+            Dog dog = dogRepository.updateDogName(id, name);
+            return dog;
+        } else {
+            throw new DogNotFoundException("Not a valid id", id);
+        }
+    }
+
 }
