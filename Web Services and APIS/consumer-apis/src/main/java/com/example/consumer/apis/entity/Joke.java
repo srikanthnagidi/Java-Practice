@@ -6,9 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter @NoArgsConstructor
-@Data
-public class Joke {
+@NoArgsConstructor
+public @Data class Joke {
     private Long id;
     private String type;
     private String setup;
@@ -24,7 +23,7 @@ public class Joke {
     @Override
     public String toString(){
         return "Joke{" +
-                "id=" + this +
+                "id=" + id +
                 ", type='" + type + '\'' +
                 ", setup='" + setup + '\'' +
                 ", punchline='" + punchline + '\'' +
