@@ -2,6 +2,8 @@ package com.udacity.bootstrapII.web;
 
 import com.udacity.bootstrapII.entity.Dog;
 import com.udacity.bootstrapII.service.DogService;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@ApiResponses(value = {
+        @ApiResponse(code=400, message = "This is bad request, please follow the API documentation for proper request"),
+        @ApiResponse(code=401, message = "Due to security constraint, your access request cannot be authorized"),
+        @ApiResponse(code = 500, message = "Server is down, please make sure that Dog microservice is running")
+})
 public class DogController {
     private DogService dogService;
 
