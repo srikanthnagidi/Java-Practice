@@ -29,7 +29,7 @@ public class ChurchCalenderApiApplication {
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception{
 		return args -> {
 			Calendar calendar = restTemplate.getForObject("http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today", Calendar.class);
-			log.info(new Gson().toJson(calendar));
+			log.info(new Gson().toJson(calendar));//returning json
 			System.out.println(new Gson().toJson(calendar));
 		};
 	}
