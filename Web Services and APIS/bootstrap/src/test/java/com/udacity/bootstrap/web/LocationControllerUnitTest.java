@@ -35,6 +35,6 @@ public class LocationControllerUnitTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(content().json("[]"));
-        //verify(locationService, times(1)).retrieveLocations();
+        verify(locationService, times(1)).retrieveLocations();
     }
 }
