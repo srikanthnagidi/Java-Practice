@@ -1,0 +1,11 @@
+create table customer (id bigint not null, name varchar(255), primary key (id));
+create table customers_phones (customers_id bigint not null, phone_numbers_id bigint not null, primary key (customers_id, phone_numbers_id));
+create table items (id bigint not null, quanity integer not null, product_id bigint, order_id bigint, primary key (id));
+create table orders (id bigint not null, create_at datetime, customer_id bigint, primary key (id));
+create table phone_numbers (id bigint not null, value varchar(255), primary key (id));
+create table products (id bigint not null, name varchar(255), primary key (id));
+alter table customers_phones add constraint FKmsf59h0dvh6595tnngfkdoxi2 foreign key (phone_numbers_id) references phone_numbers (id);
+alter table customers_phones add constraint FKtq873gxi626bqff83yrsh9csh foreign key (customers_id) references customer (id);
+alter table items add constraint FKmtk37pxnx7d5ck7fkq2xcna4i foreign key (product_id) references products (id);
+alter table items add constraint FKirjef006njdi706iiqdfkgk9d foreign key (order_id) references orders (id);
+alter table orders add constraint FK624gtjin3po807j3vix093tlf foreign key (customer_id) references customer (id);
