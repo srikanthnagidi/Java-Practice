@@ -3,6 +3,9 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
     <!-- Define persistence unit -->
     <persistence-unit name="order" transaction-type="RESOURCE_LOCAL">
-        <class></class>
+        <class>entity.Order</class>
+        <properties>
+            <property name="javax.persistence.jdbc.diver" value="com.mysql.jdbc.Driver"/>
+        </properties>
     </persistence-unit>
 </persistence>
