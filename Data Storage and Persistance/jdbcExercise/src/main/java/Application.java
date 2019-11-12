@@ -1,4 +1,3 @@
-import org.flywaydb.core.Flyway;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,12 +11,7 @@ public class Application {
         try{
             try(Connection conn = DriverManager.getConnection(jdbcUrl)){
                 System.out.println("Connected to "+conn.getMetaData().getDatabaseProductName());
-                //Statement is created from the JDBC Connection object
-                Statement stmt = conn.createStatement();
-               // Flyway flyway = Flyway.configure().dataSource("jdbc:h2:file:./target/foobar", "sa", null).load();
 
-                // Start the migration
-                flyway.migrate();
             }
         }catch (SQLException e) {
             System.out.println("SQLException: " + e.getMessage());
