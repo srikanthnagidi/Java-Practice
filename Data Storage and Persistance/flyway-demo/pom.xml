@@ -44,11 +44,11 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
             <version>4.0</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
