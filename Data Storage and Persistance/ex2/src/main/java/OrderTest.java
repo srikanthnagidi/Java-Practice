@@ -67,7 +67,7 @@ public class OrderTest {
         Order order = entityManager.find(Order.class, orderId);
 
         System.err.println("Order: " + order);
-
+        order.getOrderItems().forEach(orderItem -> System.err.println("Order Item: " + orderItem));
         entityManager.close();
     }
 }

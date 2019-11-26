@@ -31,6 +31,6 @@ public class Order {
     @Column(name = "created_time")
     private Timestamp credatedTime;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private List<OrderItem> orderItems;
 }
