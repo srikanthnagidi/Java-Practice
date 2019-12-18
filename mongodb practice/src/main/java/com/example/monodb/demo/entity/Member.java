@@ -1,19 +1,20 @@
 package com.example.monodb.demo.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.io.Serializable;
 
 
+@Document("members")
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-public class Member implements Serializable {
+public class Member{
+    @Id
+    private String id;
 
     private String firstName;
 
@@ -22,6 +23,16 @@ public class Member implements Serializable {
     private String gender;
 
     private int age;
+
+    public Member(String firstName, String lastName, String gender, int age, Address address, String[] interests, double balance) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.age = age;
+        this.address = address;
+        this.interests = interests;
+        this.balance = balance;
+    }
 
     private Address address;
 
