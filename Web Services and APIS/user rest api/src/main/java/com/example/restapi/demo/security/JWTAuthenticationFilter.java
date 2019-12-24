@@ -2,7 +2,7 @@ package com.example.restapi.demo.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.example.restapi.demo.entity.User;
+import org.springframework.security.core.userdetails.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -32,7 +32,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public Authentication attemptAuthentication(HttpServletRequest request,
                                                 HttpServletResponse response) throws AuthenticationException {
         try{
-            User credentials = new ObjectMapper().readValue(request.getInputStream(), User.class);
+            com.example.restapi.demo.entity.User credentials = new ObjectMapper().readValue(request.getInputStream(), com.example.restapi.demo.entity.User.class);
             return authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                     credentials.getUsername(),
                     credentials.getPassword(),

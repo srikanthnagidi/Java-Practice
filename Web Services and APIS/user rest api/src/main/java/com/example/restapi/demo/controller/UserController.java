@@ -4,6 +4,8 @@ import com.example.restapi.demo.DemoApplication;
 import com.example.restapi.demo.entity.User;
 import com.example.restapi.demo.repository.UserRepository;
 import com.example.restapi.demo.service.UserService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Date;
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -31,6 +34,7 @@ public class UserController {
         User user = userService.getUser(id);
         return ResponseEntity.status(HttpStatus.OK).body(user);
     }
+
 
     @GetMapping("/users")
     public Iterable<User> getAllUsers(){
