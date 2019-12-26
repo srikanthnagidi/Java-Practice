@@ -15,10 +15,20 @@ public class DataKey implements Serializable {
     private String itemCode;
 
     @Column(name = "year")
-    private int year;
+    private Integer year;
 
     @Column(name = "element_id")
     private String id;
+
+    @Override
+    public String toString() {
+        return "DataKey{" +
+                "countryCode='" + countryCode + '\'' +
+                ", itemCode='" + itemCode + '\'' +
+                ", year=" + year +
+                ", id='" + id + '\'' +
+                '}';
+    }
 
     public DataKey() {
     }
@@ -75,6 +85,17 @@ public class DataKey implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCountryCode(), getItemCode(), getYear(), getId());
+        //return Objects.hash(getCountryCode(), getItemCode(), getYear(), getId());
+        final int prime = 31;
+        int result = 1;
+        result = prime * result
+                + ((countryCode == null) ? 0 : countryCode.hashCode());
+        result = prime * result
+                + ((itemCode == null) ? 0 : itemCode.hashCode());
+        result = prime * result
+                + ((year == 0) ? 0 : year.hashCode());
+        result = prime * result
+                + ((id == null) ? 0 : id.hashCode());
+        return result;
     }
 }

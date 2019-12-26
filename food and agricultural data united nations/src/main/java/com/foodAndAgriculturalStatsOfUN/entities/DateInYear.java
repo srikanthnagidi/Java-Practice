@@ -1,19 +1,21 @@
 package com.foodAndAgriculturalStatsOfUN.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
 @Table(name = "year")
-public class DateInYear {
+public class DateInYear implements Comparable, Serializable {
     @Id
-    private int year;
+    private Integer year;
 
-    @OneToMany(mappedBy = "dateInYear", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(mappedBy = "dateInYear", orphanRemoval = true)
     private Set<Data> dataList  = new HashSet<>();
 
-    public DateInYear(int year) {
+    public DateInYear(Integer year) {
         this.year = year;
     }
 
@@ -28,7 +30,7 @@ public class DateInYear {
         this.dataList = dataList;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
@@ -36,4 +38,22 @@ public class DateInYear {
         this.year = year;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DateInYear year1 = (DateInYear) o;
+        return getYear().equals(year1.getYear());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getYear());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        DateInYear dateInYear = (DateInYear) o;
+        return this.getYear().compareTo(dateInYear.getYear());
+    }
 }

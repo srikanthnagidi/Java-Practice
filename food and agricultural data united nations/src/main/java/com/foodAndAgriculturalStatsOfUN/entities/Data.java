@@ -7,36 +7,36 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "datas")
-public class Data {
+public class Data implements Serializable{
 
    @EmbeddedId
    private DataKey id;
 
-   @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-   @MapsId("country_code")
-   @JoinColumn(name = "country_code")
+   @ManyToOne(cascade = CascadeType.MERGE)
+   @JoinColumn(name = "country_code", insertable = false, updatable = false)
    private Country country;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @MapsId("item_code")
-    @JoinColumn(name = "item_code")
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "item_code", insertable = false, updatable = false)
     private Item item;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @MapsId("year")
-    @JoinColumn(name = "year")
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "year", insertable = false, updatable = false)
     private DateInYear dateInYear;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @MapsId("element_id")
-    @JoinColumn(name = "element_id")
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "element_id", insertable = false, updatable = false)
     private Element element;
 
+    @Column
     private String unit;
 
+    @Column
     private BigDecimal value;
 
+    @Column
     private String flag;
+
 
     public Data(Country country, Item item, DateInYear dateInYear, Element element, String unit, BigDecimal value, String flag){
         this.id = new DataKey(country.getCode(), item.getCode(), dateInYear.getYear(), element.getId());
@@ -128,18 +128,31 @@ public class Data {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Data data = (Data) o;
-        return Objects.equals(getId(), data.getId()) &&
-                Objects.equals(getCountry(), data.getCountry()) &&
-                Objects.equals(getItem(), data.getItem()) &&
-                Objects.equals(getDateInYear(), data.getDateInYear()) &&
-                Objects.equals(getElement(), data.getElement()) &&
-                Objects.equals(getUnit(), data.getUnit()) &&
-                Objects.equals(getValue(), data.getValue()) &&
-                Objects.equals(getFlag(), data.getFlag());
+        return this.getCountry().equals(data.getCountry()) &&
+                this.getItem().equals(data.getItem()) &&
+                this.getElement().equals(data.getElement()) &&
+                this.getDateInYear().equals(data.getDateInYear()) &&
+                this.getUnit().equals(data.getUnit()) &&
+                this.getFlag().equals(data.getFlag()) &&
+                this.getValue().equals(data.getValue());
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getCountry(), getItem(), getDateInYear(), getElement(), getUnit(), getValue(), getFlag());
+    }
+
+    @Override
+    public String toString() {
+        return "Data{" +
+                "id=" + id +
+                ", country=" + country.getCode() +
+                ", item=" + item.getLabel()+
+                ", dateInYear=" + dateInYear.getYear() +
+                ", element=" + element.getId() +
+                ", unit='" + unit + '\'' +
+                ", value=" + value +
+                ", flag='" + flag + '\'' +
+                '}';
     }
 }

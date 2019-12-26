@@ -1,12 +1,14 @@
 package com.foodAndAgriculturalStatsOfUN.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
 @Table(name = "countries")
-public class Country {
+public class Country implements Comparable, Serializable {
 
     @Id
     private String code;
@@ -14,7 +16,7 @@ public class Country {
     @Column(nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "country", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @OneToMany(mappedBy = "country", cascade = CascadeType.MERGE)
     private Set<Data> dataList = new HashSet<>();
 
     public Country() {
@@ -47,5 +49,23 @@ public class Country {
 
     public void setDataList(Set<Data> dataList) {
         this.dataList = dataList;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Country country = (Country) o;
+        return this.getCode().equals(country.getCode());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCode());
+    }
+    @Override
+    public int compareTo(Object o) {
+        Country c = (Country) o;
+        return this.getCode().compareTo(c.getCode());
     }
 }
