@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "datas")
-public class Data implements Serializable{
+public class Data{
 
    @EmbeddedId
    private DataKey id;

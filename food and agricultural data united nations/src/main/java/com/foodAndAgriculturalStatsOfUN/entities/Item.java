@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "items")
-public class Item implements Comparable, Serializable {
+public class Item implements Comparable{
     @Id
     private String code;
 

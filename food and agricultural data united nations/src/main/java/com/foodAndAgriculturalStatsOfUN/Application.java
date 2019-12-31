@@ -4,6 +4,7 @@ import com.foodAndAgriculturalStatsOfUN.entities.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.FlushModeType;
 import javax.persistence.Persistence;
 import java.io.*;
 import java.math.BigDecimal;
@@ -87,6 +88,7 @@ public class Application {
         //dataList.stream().distinct().forEach(data -> System.out.println(data.getId()));
         dataList.stream().distinct().filter(data -> data.getId() != null).collect(Collectors.toList()).stream().forEach(data -> entityManager.persist(data));
 
+        entityManager.setFlushMode(FlushModeType.AUTO);
         entityManager.getTransaction().commit();
         entityManager.close();
         factory.close();

@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "year")
-public class DateInYear implements Comparable, Serializable {
+public class DateInYear implements Comparable {
     @Id
     private Integer year;
 
